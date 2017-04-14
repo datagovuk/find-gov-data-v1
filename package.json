@@ -1,6 +1,6 @@
 {
   "name": "express-prototype",
-  "description": "GOVUK prototyping app in Express",
+  "description": "Find Government Data Prototype V1",
   "version": "6.0.0",
   "private": true,
   "engines": {
