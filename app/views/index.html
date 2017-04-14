@@ -8,6 +8,7 @@
 {% block content %}
 
 <main id="content" role="main">
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
@@ -15,7 +16,26 @@
         Find government data
       </h1>
 
+      <p class="lede">
+        You can use this data to learn more about how government<br/>
+        works, carry out research or build applications and services
+      </p>
+    </div>
+
+    <form id="search-form" action="/dataset" method="GET" class="column-two-thirds">
+      <fieldset>
+        <div id="search-box">
+          <nobr>
+            <input id="q" name="q" type="text" placeholder="" class="form-control search" autocomplete="off" style="width: 100%; height: 50px;">
+            <button type="submit" class="button" style="height: 50px;  margin-top: -1px">Find data</button>
+          </nobr>
+        </div>
+      </fieldset>
+    </form>
   </div>
+
+
+
 </main>
 
 {% endblock %}
