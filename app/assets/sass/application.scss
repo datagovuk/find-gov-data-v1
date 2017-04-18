@@ -36,3 +36,35 @@ $path: "/public/images/";
     padding-bottom: 30px;
 }
 
+/* Facet block */
+.filter_block {
+  width: 90%;
+  background: #eee;
+  padding: 10px;
+  margin-top: 20px;
+  .bold {
+    font-weight: bold;
+  }
+  select {
+    width: 100%;
+  }
+}
+
+/* Make secondary heading work even with a heading-medium  */
+.heading-medium {
+  margin-top: 12px;
+  .heading-secondary {
+    display: block;
+    color: #6f777b;
+    font-size: smaller;
+  }
+}
+
+.dataset {
+  padding: 8px;
+  border-left: solid 8px #fff;
+}
+.dataset.register {
+  background-color: #eee;
+  border-left: solid 8px #6f777b;
+}

@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+
+{% block page_title %}
+  Find government data
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Search results for
+      </h1>
+    </div>
+
+    <form id="search-form" action="/dataset" method="GET" class="column-one-half">
+      <fieldset>
+        <div id="search-box">
+          <nobr>
+            <input id="q" name="q" type="text" placeholder="" class="form-control search" autocomplete="off" style="width: 100%; height: 50px;">
+            <button type="submit" class="button" style="height: 50px;  margin-top: -1px">Find data</button>
+          </nobr>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <br/>
+      <span class="bold-xlarge">125</span> results
+    </div>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+      <fieldset class="filter_block">
+        <label for="publishers"
+               class="form-label bold">
+          Publishers
+        </label>
+        <select name="publishers" class="form-control">
+          <option>All</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="filter_block">
+        <label for="publishers"
+               class="form-label bold">
+          Show
+        </label>
+        <div class="multiple-choice">
+          <input id="radio-inline-1" type="radio" name="local_national" value="local">
+          <label for="radio-inline-1">Local datasets</label>
+        </div>
+        <div class="multiple-choice">
+          <input id="radio-inline-2" type="radio" name="local_national" value="national">
+          <label for="radio-inline-2">National datasets</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="column-two-thirds">
+
+      <div class="dataset register">
+        <h1 class="heading-medium">
+          <a href="">Country Register</a>
+          <span class="heading-secondary">Foreign and Commonwealth Office</span>
+        </h1>
+        <p>British English-language names and descriptive terms for countries</p>
+      </div>
+
+      <div class="dataset">
+        <h1 class="heading-medium">
+          <a href="">Listed Buildings</a>
+          <span class="heading-secondary">Local Authorities</span>
+        </h1>
+        <p>Listed buildings of special, or architectural interest</p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+
