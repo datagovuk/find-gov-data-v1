@@ -124,3 +124,40 @@ ul.pagination {
     padding-right: .3em;
   }
 }
+
+
+.dataset {
+  h2 {
+    font-weight: normal;
+    &.related {
+      font-weight: bold;
+    }
+  }
+  h3 {
+    border-bottom: 1px solid $grey-2;
+  }
+  ul.dataset-details {
+    font-size: 80%;
+    margin-bottom: 3em;
+    list-style-type: none;
+    div {
+      display: inline-block;
+      width: 9em;
+    }
+  }
+
+  nav.dataset-toc {
+    ul li {
+      list-style: none;
+      &:before {
+        content: "–";
+        padding-right: 8px;
+      }
+    }
+  }
+  ul.related-list {
+    li {
+      border-bottom: 1px solid $grey-2;
+    }
+  }
+}
