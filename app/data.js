@@ -16,5 +16,15 @@ module.exports = {
         name: "wirral-council",
         type: "local"
     }
-  ]
+  ],
+  local_organisations: function() {
+    return this.organisations.filter(function(o){
+        return o.type == 'local';
+    })
+  },
+  national_organisations: function() {
+    return this.organisations.filter(function(o){
+        return o.type == 'national';
+    })
+  }
 }
