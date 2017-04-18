@@ -37,7 +37,7 @@ $path: "/public/images/";
 }
 
 /* Facet block */
-.filter_block {
+.filter-block {
   width: 90%;
   background: #eee;
   padding: 10px;
@@ -48,6 +48,9 @@ $path: "/public/images/";
   select {
     width: 100%;
   }
+  label {
+    padding-bottom: 1em;
+  }
 }
 
 /* Make secondary heading work even with a heading-medium  */
@@ -55,18 +58,24 @@ $path: "/public/images/";
   margin-top: 12px;
   .heading-secondary {
     display: block;
-    color: #6f777b;
-    font-size: smaller;
+    color: #555;
+    font-size: 80%;
+    font-weight: normal;
+    margin-top: .4em;
   }
 }
 
 .dataset {
-  padding: 8px;
   border-left: solid 8px #fff;
+  h1 {
+    font-weight: normal;
+  }
 }
+
 .dataset.register {
   background-color: #eee;
-  border-left: solid 8px #6f777b;
+  border-left: solid 8px black;
+  padding-left: 1.5em;
 }
 
 .header-logo {
@@ -99,4 +108,17 @@ $path: "/public/images/";
   text-indent: -5000px;
   border: 0;
   padding: 0;
+}
+
+.search-suggest {
+  font-size: 80%;
+  padding-top: .5em;
+}
+
+ul.pagination {
+  list-style-type: none;
+  li {
+    display: inline-block;
+    padding-right: .3em;
+  }
 }
