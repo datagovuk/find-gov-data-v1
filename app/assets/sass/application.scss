@@ -33,7 +33,7 @@ $path: "/public/images/";
 .masthead {
     margin: 0;
     background: #eee;
-    padding-bottom: 30px;
+    padding: 0 1.5em 2em 1.5em;
 }
 
 /* Facet block */
@@ -67,4 +67,36 @@ $path: "/public/images/";
 .dataset.register {
   background-color: #eee;
   border-left: solid 8px #6f777b;
+}
+
+.header-logo {
+  font-size: 24px;
+  padding-left: 1.5em;
+  color: white;
+}
+
+.phase-tag {
+  margin-left: 1em;
+}
+
+#global-header.with-proposition .header-wrapper .header-global {
+  width: 50%;
+}
+
+.search {
+  height: 40px;
+  width: 90%;
+}
+
+.search-submit {
+  line-height: 3.2em;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #0b0c0c url(https://assets.publishing.service.gov.uk/frontend/homepage/search-button-085aa82ff641b5cfb3eb090c888459f96be271efe9c1d98a73c8a181202d9063.png) no-repeat 2px 50%;
+  text-indent: -5000px;
+  border: 0;
+  padding: 0;
 }
