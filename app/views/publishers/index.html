@@ -12,8 +12,17 @@
       <h1 class="heading-xlarge">
         Publishers
       </h1>
-
+    </div>
   </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <ul class="list list-bullet">
+        {% for organisation in data.organisations %}
+            <li>{{ organisation.title }} - {{ organisation.type }} </li>
+        {% endfor %}
+        </ul>
+    </div>
 </main>
 
 {% endblock %}
