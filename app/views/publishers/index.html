@@ -12,8 +12,33 @@
       <h1 class="heading-xlarge">
         Publishers
       </h1>
-
+    </div>
   </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+        <h1 class="heading-medium">
+          Local organisations
+        </h1>
+
+        <ul class="list list-bullet">
+        {% for organisation in data.local_organisations() %}
+            <li>{{ organisation.title }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    <div class="column-two-thirds">
+        <h1 class="heading-medium">
+          National organisations
+        </h1>
+
+        <ul class="list list-bullet">
+        {% for organisation in data.national_organisations() %}
+            <li>{{ organisation.title }}</li>
+        {% endfor %}
+        </ul>
+    </div>
 </main>
 
 {% endblock %}
