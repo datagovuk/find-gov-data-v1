@@ -75,7 +75,7 @@ $path: "/public/images/";
 .dataset.register {
   background-color: #eee;
   border-left: solid 8px black;
-  padding-left: 1.5em;
+  padding: .2em .2em .2em 1.5em;
 }
 
 .header-logo {
@@ -93,14 +93,16 @@ $path: "/public/images/";
 }
 
 .search {
+  box-sizing: border-box;
   height: 40px;
-  width: 90%;
+  width: 100%;
+  margin-right: -40px;
 }
 
 .search-submit {
-  line-height: 3.2em;
+  vertical-align: middle;
   box-sizing: border-box;
-  height: 40px;
+  height: 38px;
   width: 40px;
   cursor: pointer;
   overflow: hidden;
