@@ -34,8 +34,9 @@ var ShowHide = function() {
 
 ShowHide.prototype = {
   toggle : function(event) {
-    $(event.target).parents(this.selector).find(this.contentSelector).toggle()
-    $('.showHide-control').html(this.isOpen? '-' : '+');
+    var parentShowHide = $(event.target).parents(this.selector)
+    parentShowHide.find(this.contentSelector).toggle()
+    parentShowHide.find(this.controlSelector).html(this.isOpen? '-' : '+');
     this.isOpen = !this.isOpen;
   },
 
