@@ -127,14 +127,15 @@ ul.pagination {
 
 
 .dataset {
+  section {
+    margin-bottom: 3em;
+  }
   h2 {
+    margin-top: 0;
     font-weight: normal;
     &.related {
       font-weight: bold;
     }
-  }
-  h3 {
-    border-bottom: 1px solid $grey-2;
   }
   ul.dataset-details {
     font-size: 80%;
@@ -145,7 +146,22 @@ ul.pagination {
       width: 9em;
     }
   }
-
+  .title-download {
+    h2 { float: left; }
+    div {
+      margin-top: .4em;
+      float: right;
+    }
+  }
+  .year-expand {
+    height: 3em;
+    border-bottom: 1px solid $grey-2;
+    h3 { float: left; }
+    div { float: right; }
+  }
+  .description {
+    margin-bottom: 2em;
+  }
   nav.dataset-toc {
     ul li {
       list-style: none;
@@ -153,11 +169,33 @@ ul.pagination {
         content: "–";
         padding-right: 8px;
       }
+      a {
+        color: $text-colour;
+        text-decoration: none;
+      }
     }
   }
   ul.related-list {
     li {
       border-bottom: 1px solid $grey-2;
     }
+  }
+  hr,.breaker {
+    clear: both;
+  }
+  hr {
+    margin-bottom: 0;
+  }
+  span.expand {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .preview {
+    padding-right: 1.4em;
+  }
+  .year-datasets {
+    li { margin: .7em 0 .5em 0 }
+    h4 { margin-bottom: .3em }
+    li + li { margin-top: 2em }
   }
 }
