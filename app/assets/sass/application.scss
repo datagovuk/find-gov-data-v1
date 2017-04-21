@@ -128,3 +128,22 @@ ul.pagination {
     padding-right: .3em;
   }
 }
+
+.local-authority-choice {
+  .button {
+    background-color: lightgray;
+    margin-top: 30px;
+    color: black;
+    border-style: solid;
+    border-width: thin;
+  }
+  .heading-first {
+    font-size: 24px;
+    margin-top: 30px;
+    color: grey;
+  }
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
