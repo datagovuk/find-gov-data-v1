@@ -18,7 +18,7 @@
 
       <form id="select-LA" action="" method="GET" class="column-two-thirds">
         <fieldset>
-          {% for organisation in data.local_organisations() %}
+          {% for organisation in data.organisations %}
           <div class="multiple-choice">
             <input id="checkbox-{{ organisation.name }}"
                    name="LA"
