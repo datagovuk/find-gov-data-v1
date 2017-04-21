@@ -202,4 +202,10 @@ ul.pagination {
     h4 { margin-bottom: .3em }
     li + li { margin-top: 2em }
   }
+  a.report-a-problem {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    position:absolute;
+  }
 }
