@@ -20,4 +20,27 @@ $(document).ready(function () {
   // to toggle hidden content
   var showHideContent = new GOVUK.ShowHideContent()
   showHideContent.init()
+
+  var showHide = new ShowHide()
+  showHide.init()
 })
+
+var ShowHide = function() {
+  this.selector = '.showHide'
+  this.controlSelector = '.showHide-control'
+  this.contentSelector = '.showHide-content'
+  this.isOpen = false;
+}
+
+ShowHide.prototype = {
+  toggle : function(event) {
+    var parentShowHide = $(event.target).parents(this.selector)
+    parentShowHide.find(this.contentSelector).toggle()
+    parentShowHide.find(this.controlSelector).html(this.isOpen? '-' : '+');
+    this.isOpen = !this.isOpen;
+  },
+
+  init : function() {
+    $(this.controlSelector).on('click', this.toggle.bind(this))
+  }
+}
