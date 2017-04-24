@@ -13,24 +13,24 @@
     <div class="column-two-thirds">
       <p class="heading-first">Local Authorities datasets collection</p>
       <h1 class="heading-large">Spending over £500</h1>
-      <p class="lede">Select Local Authorities</p>
+      <p class="lede">Select years</p>
     </div>
   </div>
 
   <div class="grid-row">
       <form id="select-LA" action="" method="GET" class="column-two-thirds">
         <fieldset>
-          {% for organisation in data.organisations %}
+          {% for year in [2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010] %}
           <div class="multiple-choice">
-            <input id="checkbox-{{ organisation.name }}"
-                   name="LA"
+            <input id="checkbox-{{ year }}"
+                   name="year"
                    type="checkbox"
-                   value="{{ organisation.name }}">
-            <label for="checkbox-{{ organisation.name }}">{{ organisation.title }}</label>
+                   value="{{ year }}">
+            <label for="checkbox-{{ year }}">{{ year }}</label>
           </div>
           {% endfor %}
           <div class="form-group">
-            <a href="year" class="button">Next</a>
+            <a class="button" href="download">Download</a>
           </div>
         </fieldset>
       </form>
